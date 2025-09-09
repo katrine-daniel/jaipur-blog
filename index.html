@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jaipur Heritage - Page 01</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'raleway': ['Verdana', 'sans-serif'],
+                    },
+                    colors: {
+                        'cream': '#FDF6E3',
+                        'brown-custom': '#8B4513',
+                        'brown-light': '#A0522D',
+                        'quote-bg': '#F0E4C4',
+                        'green-custom': '#7cb342',
+                    },
+                    spacing: {
+                        '116': '116vh',
+                        '15': '3.75rem',
+                        '68': '17rem',
+                        '69': '17.25rem',
+                        '80': '20rem',
+                    },
+                    backgroundImage: {
+                        'palace': "url('img/top.png')",
+                        'fort': "url('img/fort.png')",
+                        'dest-1': "url('img/Rectangle 4290.png')",
+                        'dest-2': "url('img/Rectangle 4288.png')",
+                        'dest-3': "url('img/Rectangle 4287.png')",
+                        'dest-4': "url('img/Rectangle 4289.png')",
+                        'dest-5': "url('img/Group 3565 (1).png')",
+                        'bottom-img': "url('img/imae 3.png')",
+                        'video-1': "url('img/3.png')",
+                        'video-2': "url('img/1.png')",
+                        'video-3': "url('img/2.png')",
+                        'gradient-overlay': 'linear-gradient(135deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7))',
+                        'gradient-brown': 'linear-gradient(135deg, rgba(212, 149, 106, 0.2) 100%, rgba(184, 120, 74, 0.6) 100%, rgba(168, 106, 58, 0.8) 100%)',
+                        'gradient-main': 'linear-gradient(to bottom, rgba(249, 237, 204, 0.8) 0%, rgba(214, 204, 177, 1) 100%)',
+                    },
+                    fontSize: {
+                        '9xl': '8rem',
+                        '10xl': '10rem',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        /* Play Button Triangle - Custom CSS needed for pseudo-element */
+        .play-button::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-40%, -50%);
+            width: 0;
+            height: 0;
+            border-left: 10px solid #333;
+            border-top: 6px solid transparent;
+            border-bottom: 6px solid transparent;
+        }
+
+        /* Legacy Keeper bottom border - Custom CSS for specific positioning */
+       
+
+        /* Mobile play button adjustment */
+        @media (max-width: 768px) {
+            .play-button::before {
+                border-left: 8px solid #333;
+                border-top: 5px solid transparent;
+                border-bottom: 5px solid transparent;
+            }
+        }
+
+        /* Custom scrollbar for sidebar */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 3px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #c1c1c1;
+            border-radius: 3px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #a8a8a8;
+        }
+    </style>
+</head>
+
+<body class="font-raleway bg-cream text-gray-800">
+    <!-- Hero Section -->
+    <div class="relative w-full overflow-hidden h-screen min-h-screen">
+
+        <!-- Background Image - Using Tailwind classes -->
+        <div class="absolute inset-0 w-full h-116 -top-24 z-0 bg-palace bg-cover bg-center bg-no-repeat"></div>
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/5 z-5"></div>
+        <!-- Main Title -->
+        <h1
+            class="absolute top-72 md:top-80 lg:top-96 left-12 lg:left-15 text-white text-xl md:text-2xl lg:text-5xl font-semibold z-20 max-w-[60%] pr-8 leading-relaxed tracking-wide">
+            A tête-à-tête with Jaipur's royalty and what they love about their city | Jaipur | Dharmendar Kanwar
+        </h1>
+
+        <!-- Desktop Video Cards -->
+        <div class="absolute right-10 top-1/2 transform -translate-y-1/2 hidden lg:flex lg:flex-col lg:gap-5">
+            <!-- Video Card 1 -->
+            <div
+                class="relative w-96 h-48 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:border-white/30 bg-video-1 bg-cover bg-center bg-blend-overlay">
+
+                <div class="absolute bottom-5 left-5 right-5 text-white text-sm font-medium leading-tight z-30">
+                    Traveller’s Tale | Jaipur 
+                    |Gustasp and Jeroo Irani 
+                </div>
+            </div>
+
+            <!-- Video Card 2 -->
+            <div
+                class="relative w-96 h-48 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:border-white/30 bg-video-2 bg-cover bg-center bg-blend-overlay">
+
+
+                <div class="absolute bottom-5 left-5 right-5 text-white text-sm font-medium leading-tight z-30">
+                    A Heritage walk through Chhattis Karkhanas | Jaipur
+                    |Dharmendar Kanwar  </div>
+            </div>
+
+            <!-- Video Card 3 -->
+            <div
+                class="relative w-96 h-48 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:border-white/30 bg-video-3 bg-cover bg-center bg-blend-overlay">
+
+                <div class="absolute bottom-5 left-5 right-5 text-white text-sm font-medium leading-tight z-30">
+                   Indigo, The Blue Gold of India | Jaipur |Dharmendar Kanwar 
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Video Cards -->
+        <div class="lg:hidden absolute bottom-5 left-0 right-0 px-5">
+            <div
+                class="flex gap-5 overflow-x-auto pb-2 scrollbar-thin scrollbar-track-white/10 scrollbar-thumb-white/30">
+                <!-- Mobile Video Card 1 -->
+                <div
+                    class="relative min-w-[280px] h-36 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer bg-video-1 bg-cover bg-center bg-blend-overlay flex-shrink-0">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-orange-200/20 via-orange-300/60 to-orange-400/80 -z-10">
+                    </div>
+                    <div class="absolute top-3 right-3 text-xl font-light text-white z-10">03</div>
+
+                    <div class="absolute bottom-4 left-4 right-4 text-white text-xs font-medium leading-tight z-30">
+                        Traveller’s Tale | Jaipur 
+                        |Gustasp and Jeroo Irani 
+                    </div>
+                </div>
+
+                <!-- Mobile Video Card 2 -->
+                <div
+                    class="relative min-w-[280px] h-36 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer bg-video-2 bg-cover bg-center bg-blend-overlay flex-shrink-0">
+
+                    <div class="absolute top-3 right-3 text-xl font-light text-white z-10">01</div>
+
+                    <div class="absolute bottom-4 left-4 right-4 text-white text-xs font-medium leading-tight z-30">
+                        A Heritage walk through Chhattis Karkhanas | Jaipur
+                        |Dharmendar Kanwar  </div>
+                </div>
+
+                <!-- Mobile Video Card 3 -->
+                <div
+                    class="relative min-w-[280px] h-36 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer bg-video-3 bg-cover bg-center bg-blend-overlay flex-shrink-0">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-orange-200/20 via-orange-300/60 to-orange-400/80 -z-10">
+                    </div>
+                    <div class="absolute top-3 right-3 text-xl font-light text-white z-10">02</div>
+
+                    <div class="absolute bottom-4 left-4 right-4 text-white text-xs font-medium leading-tight z-30">
+                         Indigo, The Blue Gold of India | Jaipur |Dharmendar Kanwar 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Explore Destinations Section -->
+    <section class="bg-gradient-to-b from-cream to-cream py-20 px-10 relative">
+        <div
+            class="destinations-container max-w-7xl mx-auto relative px-8 lg:px-12 xl:px-16 pb- transition-all duration-300">
+            <h2
+                class="text-center text-3xl lg:text-3xl font-semibold text-brown-custom my-5 mb-10 leading-tight font-serif">
+                EXPLORE DESTINATIONS
+            </h2>
+
+            <!-- Single responsive container -->
+            <div class="mb-10">
+                <!-- Mobile: Horizontal scroll, Desktop: Flex wrap -->
+                <div class="overflow-x-auto lg:overflow-x-visible pb-4">
+                    <div class="flex gap-5 min-w-max lg:min-w-0 px-4 lg:px-0 lg:justify-center lg:flex-wrap">
+                        <!-- Destination Card 1 - Goa -->
+                        <div
+                            class="destination-card relative cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] transform-gpu flex-shrink-0 lg:flex-shrink hover:-translate-y-2 hover:scale-105 mb-4">
+                            <div
+                                class="w-68 h-69 rounded-2xl relative overflow-hidden shadow-lg transition-all duration-300 bg-dest-1 bg-cover bg-center">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-black/30 to-black/10 opacity-50 transition-opacity duration-300 hover:opacity-30">
+                                </div>
+                                <div class="absolute left-1/2 transform -translate-x-1/2 bottom-6 text-lg lg:text-xl text-white font-bold uppercase tracking-wide z-20"
+                                    style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);">
+                                    GOA
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Destination Card 2 - Udaipur -->
+                        <div
+                            class="destination-card relative cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] transform-gpu flex-shrink-0 lg:flex-shrink hover:-translate-y-2 hover:scale-105 mb-4">
+                            <div
+                                class="w-68 h-69 rounded-2xl relative overflow-hidden shadow-lg transition-all duration-300 bg-dest-2 bg-cover bg-center">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-black/30 to-black/10 opacity-50 transition-opacity duration-300 hover:opacity-30">
+                                </div>
+                                <div class="absolute left-1/2 transform -translate-x-1/2 bottom-6 text-lg lg:text-xl text-white font-bold uppercase tracking-wide z-20"
+                                    style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);">
+                                    UDAIPUR
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Destination Card 3 - Jaipur -->
+                        <div
+                            class="destination-card relative cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] transform-gpu flex-shrink-0 lg:flex-shrink hover:-translate-y-2 hover:scale-105 mb-4">
+                            <div
+                                class="w-68 h-69 rounded-2xl relative overflow-hidden shadow-lg transition-all duration-300 bg-dest-3 bg-cover bg-center">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-black/30 to-black/10 opacity-50 transition-opacity duration-300 hover:opacity-30">
+                                </div>
+                                <div class="absolute left-1/2 transform -translate-x-1/2 bottom-6 text-lg lg:text-xl text-white font-bold uppercase tracking-wide z-20"
+                                    style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);">
+                                    JAIPUR
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Destination Card 4 - Rishikesh -->
+                        <div
+                            class="destination-card relative cursor-pointer transition-all duration-[600ms] ease-[cubic-bezier(0.25,0.46,0.45,0.94)] transform-gpu flex-shrink-0 lg:flex-shrink hover:-translate-y-2 hover:scale-105 mb-4">
+                            <div
+                                class="w-68 h-69 rounded-2xl relative overflow-hidden shadow-lg transition-all duration-300 bg-dest-4 bg-cover bg-center">
+                                <div
+                                    class="absolute inset-0 bg-gradient-to-br from-black/30 to-black/10 opacity-50 transition-opacity duration-300 hover:opacity-30">
+                                </div>
+                                <div class="absolute left-1/2 transform -translate-x-1/2 bottom-6 text-lg lg:text-xl text-white font-bold uppercase tracking-wide z-20"
+                                    style="text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);">
+                                    RISHIKESH
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation Indicators -->
+                <div class="flex justify-center items-center gap-4 mt-8">
+                    <div
+                        class="nav-dot w-11 h-11 rounded-full flex items-center justify-center text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border-2 border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg">
+                        01
+                    </div>
+                    <div class="w-15 h-0.5 bg-green-custom/60"></div>
+
+                    <div
+                        class="nav-dot w-11 h-11 rounded-full flex items-center justify-center text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border-2 border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg">
+                        02
+                    </div>
+                    <div class="w-15 h-0.5 bg-green-custom/60"></div>
+
+                    <div
+                        class="nav-dot active w-11 h-11 rounded-full flex items-center justify-center text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom text-white transform scale-110 shadow-lg border-0">
+                        03
+                    </div>
+                    <div class="w-15 h-0.5 bg-green-custom/60"></div>
+
+                    <div
+                        class="nav-dot w-11 h-11 rounded-full flex items-center justify-center text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border-2 border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg">
+                        04
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Container with Tailwind gradient -->
+    <div class="flex flex-col lg:flex-row gap-8 max-w-6xl mx-auto">
+        <!-- Left Column - Main Content -->
+        <div class="flex-1 lg:w-3/4">
+            <!-- Content Section -->
+            <section class="bg-white p-8 rounded-lg mb-5 shadow-lg">
+                <h2
+                    class="text-center text-3xl lg:text-3xl font-semibold text-brown-custom my-5 mb-4 leading-tight font-serif">
+                    A tête-à-tête with Jaipur's royalty and what they love about their city | Jaipur | Dharmendar
+                    Kanwar
+                </h2>
+                <h4 class="text-center text-sm font-normal text-black mb-8 pt-3 border-t border-gray-200 font-sans">
+                    👤 Dharmendar Kanwar 🕐 5 min
+                </h4>
+
+                <h2 class="text-[1.6rem] leading-[3rem] text-brown-custom font-bold mb-2 border-b border-gray-300 pb-1">
+                    Jaipur's Royal Connection
+                </h2>
+
+                <div
+                    class="w-full h-96 bg-fort bg-cover bg-center rounded-lg mb-5 flex items-center justify-center text-white text-lg font-bold">
+                </div>
+
+                <div class="text-justify text-gray-800 leading-relaxed mb-4">
+                    <p class="mb-4">
+                        Diya Kumari, from the erstwhile royal family of Jaipur shares her legacy and thoughts on the
+                        city
+                        her forefathers built with Dharmendar Kanwar, well known chronicler and author of books on
+                        Rajasthan
+                        and Rajmata Gayatri Devi.
+                    </p>
+
+                    <!-- Legacy Keeper Section -->
+                    <div class="my-8 p-6 lg:p-8 bg-gray-50 rounded-2xl border-l-4 border-brown-custom">
+                        <h3
+                            class="legacy-title text-2xl lg:text-3xl font-extrabold text-gray-700 mb-4 lg:mb-6 tracking-wide">
+                            Legacy Keeper
+                        </h3>
+
+                        <!-- Question spanning full width -->
+                        <p
+                            class="text-base lg:text-lg text-brown-custom font-bold mb-4 border-b border-gray-300 pb-2 leading-relaxed">
+                            Q. Did you know that 36 Departments or Chhattis Karkhana were established and devoted to
+                            arts and crafts way back in the 1700's? Tell us about the founders of Jaipur and their
+                            deep interest in the arts and crafts?
+                        </p>
+
+                        <!-- Content with floating image -->
+                        <div class="relative">
+                            <!-- Image floated to the right -->
+                            <div class="float-right ml-6 mb-4 w-72 lg:w-80">
+                                <div class="w-80 h-60 lg:h-96 rounded-2xl overflow-hidden shadow-lg">
+                                    <img src="img/princess image.png" alt="Princess Diya Kumari"
+                                        class="w-full h-full object-cover object-center" />
+                                </div>
+                                <p class="text-center mt-2 text-sm lg:text-base font-medium text-gray-700">
+                                    Her Highness Princess Diya Kumari
+                                </p>
+                            </div>
+
+                            <!-- Content that flows around the image -->
+                            <div class="text-justify text-gray-800 leading-relaxed space-y-4">
+                                <p class="text-sm lg:text-base">
+                                    My grandmother, the late Rajmata Gayatri Devi, always used to say that whatever
+                                    we are
+                                    today is because of Jaipur. I totally agree with that and today, I am trying to
+                                    keep the
+                                    legacy alive – of not only promoting but also reviving crafts that have suffered
+                                    in
+                                    these two years of the pandemic.
+                                </p>
+
+                                <p class="text-sm lg:text-base">
+                                    It's a small effort in that direction, of reintroducing the splendid crafts of
+                                    Jaipur to
+                                    the world, of promoting and providing a platform to the skilled artisans and
+                                    craftsmen
+                                    of Jaipur. But there is so much more to Jaipur than its arts and crafts. So, I
+                                    would
+                                    like to share a brief look at the city and its impressive history.
+                                </p>
+                            </div>
+
+                            <!-- Clear float -->
+                            <div class="clear-both"></div>
+                        </div>
+                    </div>
+
+            </section>
+
+            <!-- Sidebar Sections -->
+            <section class="bg-white p-5 rounded-lg mb-3 shadow-lg">
+                <h3 class="text-[1.6rem] leading-[3rem] text-brown-custom font-bold mb-2 border-b border-gray-300 pb-1">
+                    The Royal Foundation
+                </h3>
+                <p class="text-sm lg:text-base mb-6">
+                    My ancestor Maharaja Sawai Jai Singh, well-known as a patron of arts, founded the city of Jaipur
+                    in
+                    1727, and it was his planning genius that gave it an identity as a city of arts and crafts. From
+                    marble
+                    to wood, paintings to printing, jewellery to pottery the city has a long list of crafts that
+                    have done
+                    the Pink City proud, so much so that UNESCO placed Jaipur in their Creative Cities Network in
+                    2015 and
+                    as a World Heritage City in 2019.
+                </p>
+
+                <p class="text-sm lg:text-base mb-6">
+                    The city was built keeping in mind the principles of ancient Indian architecture. It was divided
+                    into
+                    nine blocks, out of which two are occupied by the state buildings and palaces – we still live in
+                    the
+                    Palace and quite a few sections have been converted into museums that are open for tourists.
+                </p>
+
+                <p class="text-sm lg:text-base mb-6">
+                    One important piece of information that often gets overlooked is the fact that Raja Man Singh
+                    was among
+                    the first rulers who patronised arts and crafts and started ateliers and many departments (see
+                    story on
+                    36 Departments) that were devoted to different crafts and many have survived to this day. This
+                    tradition
+                    was continued in the 18th century and was an important element of how Jaipur was planned and how
+                    areas
+                    within the walled cities were designated to multiple crafts.
+                </p>
+            </section>
+
+            <section class="bg-white p-5 rounded-lg mb-3 shadow-lg">
+                <h3 class="text-[1.6rem] leading-[3rem] text-brown-custom font-bold mb-2 border-b border-gray-300 pb-1">
+                    My Father's Legacy
+                </h3>
+                <p class="text-sm lg:text-base mb-6">
+                    My father, Bhawani Singh, was my role model - he distinguished himself in the Armed Forces after
+                    he was
+                    commissioned into 3rd Cavalry of the Indian Army and was awarded India's second highest military
+                    honour,
+                    the Mahavir Chakra in 1972, for his gallantry and heroic act when he captured Chachro in the
+                    Indo-Pakistani War of 1971.
+                </p>
+                <p class="text-sm lg:text-base mb-6">
+                    Other than being a highly decorated soldier he was always there to help the people of Jaipur and
+                    always
+                    carried the tradition of being available for his people.
+                </p>
+                <div
+                    class="border border-quote-bg p-6 my-5 bg-quote-bg rounded-lg shadow-sm text-sm lg:text-base leading-relaxed text-gray-700 text-justify">
+                    After his demise, we, my two sons and daughter, continued to reside in the City Palace along
+                    with my
+                    mother, Rajmata Padmini Devi. Over the years I too started feeling that I should do whatever I
+                    can to
+                    help the people of Rajasthan and it was with this in mind that I stood for election and am today
+                    an MP
+                    from Rajsamand. The words of my grandmother Rajmata Gayatri Devi that "we are what we are
+                    because of the
+                    love and support of our people" continue to resonate with me and I am determined to keep that
+                    legacy
+                    alive.
+                </div>
+            </section>
+
+            <!-- Ad Banner Section -->
+            <div class="text-center my-8 py-5">
+                <img src="img/Add_banner (5).png" alt="Advertisement"
+                    class="max-w-full h-auto w-full lg:w-30 lg:h-22 rounded mx-auto">
+            </div>
+
+            <section class="bg-white p-8 rounded-lg mb-5 shadow-lg">
+                <div class="text-justify text-gray-800 leading-relaxed">
+                    <p
+                        class="text-base lg:text-lg text-brown-custom font-bold mb-4 border-b border-gray-300 pb-2 leading-relaxed">
+                        <strong class="text-brown-custom font-semibold">Q. What would you recommend to a first-time
+                            visitor
+                            or even repeat
+                            visitors to see or must do in Jaipur?</strong>
+                    </p>
+
+                    <p class="text-sm lg:text-base mb-6">
+                        I wish every traveller who comes to Jaipur takes time out to visit the City Palace and
+                        several
+                        museums housed within it. Jaipur's City Palace is a delightful blend of Mughal and
+                        traditional
+                        Rajasthani architecture, and sprawls over one-seventh of the area in the walled city. It
+                        houses the
+                        beautiful Chandra Mahal, Shri Govind Dev temple and museums.
+                    </p>
+
+                    <p class="text-sm lg:text-base mb-6">
+                        Other areas of interest here are the Mubarak Mahal, originally a guest house for visiting
+                        dignitaries that houses the royal costumes museum; the Sileh Khana that houses the weaponry;
+                        the
+                        Diwan-i-Khas or the Hall of private audience that is noteworthy for its carved stone pillars
+                        as well
+                        as the two gigantic silver urns that stand here, these are believed to be the largest silver
+                        objects
+                        in the world.
+                    </p>
+                </div>
+
+                <div class="text-justify text-gray-800 leading-relaxed">
+                    <p class="text-sm lg:text-base mb-6">
+                        These urns were filled with the holy water of the Ganges by Maharaja Madho Singh II, a
+                        devout Hindu,
+                        and were believed to have been transported all the way to England so that he would not have
+                        to drink
+                        polluted water. Diwan-i-Am, or the Hall of Public Audience is now the art gallery and
+                        contains some
+                        of the best miniature paintings to be found anywhere in the world. Also on display are rare
+                        manuscripts, carpets and paper cuttings.
+                    </p>
+
+                    <p class="text-sm lg:text-base mb-6">
+                        Pritam Chowk in the inner courtyard leads up to the Chandra Mahal as the top floors are
+                        still
+                        occupied by us. While here do not miss the four beautiful gateways in the courtyard, each
+                        representing the seasons – Peacock Gate being the most photographed one for its exquisite
+                        paintings.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Bottom Image Section -->
+            <section class="bg-white p-5 rounded-lg mb-4 shadow-lg">
+                <div
+                    class="w-full h-64 md:h-80 lg:h-80 rounded-[10px] overflow-hidden shadow-lg bg-bottom-img bg-cover bg-center bg-no-repeat">
+                    <div class="w-full h-full bg-black/10 flex items-center justify-center">
+                    </div>
+                </div>
+
+                <div class="space-y-4">
+                    <p
+                        class="text-base lg:text-lg text-brown-custom font-bold mb-4 border-b border-gray-300 pb-2 leading-relaxed">
+                        <strong class="text-brown-custom font-semibold">Q. What are your future plans for the City
+                            Palace
+                            and what should visitors look for in the coming months?</strong>
+                    </p>
+                    <p class="text-sm lg:text-base mb-6">
+                        We continue to work on new galleries to display the finest works of art from our
+                        collections. The
+                        Paintings & Photography Gallery is already open and more are in progress. Other recently
+                        added
+                        attractions include the Sculpture Lumiere, a sound and light show that forms part of the
+                        Museum at
+                        night, and the new palace restaurant, Baradari where guests need to make prior reservations
+                        for a
+                        royal repast.
+                    </p>
+                    <p class="text-sm lg:text-base mb-6">
+                        For more information on timings and tickets to the City Palace, Museum and table
+                        reservations at
+                        Baradari Restaurant click on
+                        <a href="https://royaljaipur.in" target="_blank"
+                            class="text-brown-custom font-semibold underline hover:text-brown-light transition-colors duration-200">
+                            [https://royaljaipur.in]
+                        </a>
+                    </p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Right Sidebar - Fixed scrolling -->
+        <aside class="hidden lg:block lg:w-1/4 lg:ml-8">
+            <div class="sticky top-4 space-y-6">
+                <!-- Ad Banner -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img src="img/ad banner.png" alt="Your Spain Escape - QuoteYourRate Ad Banner"
+                        class="w-full h-auto object-cover cursor-pointer hover:opacity-90 transition-opacity duration-200">
+                </div>
+
+                <!-- Cities List -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <h3 class="text-lg font-semibold text-gray-800 p-4 border-b border-gray-200">More Cities to
+                        Explore</h3>
+                    <div class="max-h-96 overflow-y-auto custom-scrollbar">
+                        <ul class="divide-y divide-gray-100">
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🐪</span>
+                                <span class="text-gray-700 text-sm">Traveller's Tale | Jaipur | Gustasp and Jeroo
+                                    Irani</span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🐪</span>
+                                <span class="text-gray-700 text-sm">A tête-à-tête with Jaipur's royalty and what
+                                    they love about their city | Jaipur | Dharmendar Kanwar</span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🐪</span>
+                                <span class="text-gray-700 text-sm">A Heritage walk through Chhattis Karkhanas |
+                                    Jaipur | Dharmendar Kanwar</span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🐪</span>
+                                <span class="text-gray-700 text-sm">Indigo, The Blue Gold of India | Jaipur |
+                                    Dharmendar Kanwar</span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-700 text-sm">Goa's unique Tripurari Poornima celebrations |
+                                    Goa | Manjulika Pramod</span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-700 text-sm">Reinventing the WAY, we travel | Goa | Shikha
+                                    Tripathi</span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-700 text-sm">The Best places for sundowners | Goa | Pallavi
+                                    Pasricha</span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-700 text-sm">Goin' Goan Chef by Chef | Goa | Bunny
+                                    Suraiya</span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-700 text-sm">A cruise into the sunset | Goa | Anuradha
+                                    Goyal</span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
+                                <span class="text-gray-700 text-sm">Finding your bliss | Rishikesh | Mariellen
+                                    Ward</span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
+                                <span class="text-gray-700 text-sm">In reverence to the river Ganges - Jai Gange! |
+                                    Rishikesh | Anuradha Goyal</span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
+                                <span class="text-gray-700 text-sm">A river run for that shot of adrenaline |
+                                    Rishikesh | Delhi Fundos</span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
+                                <span class="text-gray-700 text-sm">A Drop of Divine | Rishikesh | Shikha
+                                    Tripathi</span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
+                                <span class="text-gray-700 text-sm">An oasis of serenity | Rishikesh | Shikha
+                                    Tripathi</span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌅</span>
+                                <span class="text-gray-700 text-sm">An 18th century hidden gem | Udaipur | Delhi
+                                    Fundos</span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌅</span>
+                                <span class="text-gray-700 text-sm">Mewar on a platter | Udaipur | Manjulika
+                                    Pramod</span>
+                            </li>
+                            <li
+                                class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
+                                <span class="text-gray-400 mr-3 text-sm">🌅</span>
+                                <span class="text-gray-700 text-sm">Romancing the lake city | Udaipur | Chitra
+                                    Narayanan</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+    </div>
+</body>
+
+</html>
