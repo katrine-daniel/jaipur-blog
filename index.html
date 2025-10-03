@@ -72,7 +72,7 @@
         }
 
         /* Legacy Keeper bottom border - Custom CSS for specific positioning */
-       
+
 
         /* Mobile play button adjustment */
         @media (max-width: 768px) {
@@ -115,9 +115,10 @@
         <div class="absolute inset-0 bg-black/5 z-5"></div>
         <!-- Main Title -->
         <h1
-            class="absolute top-72 md:top-80 lg:top-96 left-12 lg:left-15 text-white text-xl md:text-2xl lg:text-5xl font-semibold z-20 max-w-[60%] pr-8 leading-relaxed tracking-wide">
+            class="absolute top-64 xs:top-72 sm:top-80 md:top-80 lg:top-96 left-4 xs:left-6 sm:left-8 md:left-12 lg:left-15 text-white text-sm xs:text-base sm:text-lg md:text-2xl lg:text-5xl font-semibold z-20 max-w-[85%] xs:max-w-[80%] sm:max-w-[75%] md:max-w-[70%] lg:max-w-[60%] pr-2 xs:pr-4 sm:pr-6 md:pr-8 leading-tight xs:leading-snug sm:leading-normal md:leading-relaxed tracking-normal xs:tracking-wide">
             A tête-à-tête with Jaipur's royalty and what they love about their city | Jaipur | Dharmendar Kanwar
         </h1>
+
 
         <!-- Desktop Video Cards -->
         <div class="absolute right-10 top-1/2 transform -translate-y-1/2 hidden lg:flex lg:flex-col lg:gap-5">
@@ -146,7 +147,7 @@
                 class="relative w-96 h-48 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer hover:-translate-y-2 hover:scale-105 hover:shadow-2xl hover:border-white/30 bg-video-3 bg-cover bg-center bg-blend-overlay">
 
                 <div class="absolute bottom-5 left-5 right-5 text-white text-sm font-medium leading-tight z-30">
-                   Indigo, The Blue Gold of India | Jaipur |Dharmendar Kanwar 
+                    Indigo, The Blue Gold of India | Jaipur |Dharmendar Kanwar 
                 </div>
             </div>
         </div>
@@ -158,7 +159,7 @@
                 <!-- Mobile Video Card 1 -->
                 <div
                     class="relative min-w-[280px] h-36 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer bg-video-1 bg-cover bg-center bg-blend-overlay flex-shrink-0">
-                   
+
                     <div class="absolute top-3 right-3 text-xl font-light text-white z-10">03</div>
 
                     <div class="absolute bottom-4 left-4 right-4 text-white text-xs font-medium leading-tight z-30">
@@ -181,11 +182,11 @@
                 <!-- Mobile Video Card 3 -->
                 <div
                     class="relative min-w-[280px] h-36 bg-gradient-to-br from-black/30 via-black/50 to-black/70 rounded-xl overflow-hidden backdrop-blur-sm border border-white/10 transition-all duration-300 cursor-pointer bg-video-3 bg-cover bg-center bg-blend-overlay flex-shrink-0">
-                    
+
                     <div class="absolute top-3 right-3 text-xl font-light text-white z-10">02</div>
 
                     <div class="absolute bottom-4 left-4 right-4 text-white text-xs font-medium leading-tight z-30">
-                         Indigo, The Blue Gold of India | Jaipur |Dharmendar Kanwar 
+                        Indigo, The Blue Gold of India | Jaipur |Dharmendar Kanwar 
                     </div>
                 </div>
             </div>
@@ -268,31 +269,42 @@
                     </div>
                 </div>
 
-                <!-- Navigation Indicators -->
-                <div class="flex justify-center items-center gap-4 mt-8">
-                    <div
-                        class="nav-dot w-11 h-11 rounded-full flex items-center justify-center text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border-2 border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg">
-                        01
-                    </div>
-                    <div class="w-15 h-0.5 bg-green-custom/60"></div>
+                <!-- Navigation Indicators - Mobile Responsive -->
+<div class="flex justify-center items-center mt-8 px-4">
+    <!-- Mobile-first responsive container -->
+    <div class="flex items-center justify-center gap-1 xs:gap-2 sm:gap-3 md:gap-4 max-w-full">
+        
+        <!-- Navigation Dot 1 -->
+        <div class="nav-dot w-7 h-7 xs:w-8 xs:h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 rounded-full flex items-center justify-center text-[10px] xs:text-xs sm:text-sm md:text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg active:scale-95 flex-shrink-0">
+            01
+        </div>
+        
+        <!-- Connector Line 1 -->
+        <div class="w-3 xs:w-4 sm:w-6 md:w-8 lg:w-15 h-0.5 bg-green-custom/60 flex-shrink-0"></div>
 
-                    <div
-                        class="nav-dot w-11 h-11 rounded-full flex items-center justify-center text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border-2 border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg">
-                        02
-                    </div>
-                    <div class="w-15 h-0.5 bg-green-custom/60"></div>
+        <!-- Navigation Dot 2 -->
+        <div class="nav-dot w-7 h-7 xs:w-8 xs:h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 rounded-full flex items-center justify-center text-[10px] xs:text-xs sm:text-sm md:text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg active:scale-95 flex-shrink-0">
+            02
+        </div>
+        
+        <!-- Connector Line 2 -->
+        <div class="w-3 xs:w-4 sm:w-6 md:w-8 lg:w-15 h-0.5 bg-green-custom/60 flex-shrink-0"></div>
 
-                    <div
-                        class="nav-dot active w-11 h-11 rounded-full flex items-center justify-center text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom text-white transform scale-110 shadow-lg border-0">
-                        03
-                    </div>
-                    <div class="w-15 h-0.5 bg-green-custom/60"></div>
+        <!-- Navigation Dot 3 - Active -->
+        <div class="nav-dot active w-7 h-7 xs:w-8 xs:h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 rounded-full flex items-center justify-center text-[10px] xs:text-xs sm:text-sm md:text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom text-white transform scale-110 shadow-lg border-0 flex-shrink-0">
+            03
+        </div>
+        
+        <!-- Connector Line 3 -->
+        <div class="w-3 xs:w-4 sm:w-6 md:w-8 lg:w-15 h-0.5 bg-green-custom/60 flex-shrink-0"></div>
 
-                    <div
-                        class="nav-dot w-11 h-11 rounded-full flex items-center justify-center text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border-2 border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg">
-                        04
-                    </div>
-                </div>
+        <!-- Navigation Dot 4 -->
+        <div class="nav-dot w-7 h-7 xs:w-8 xs:h-8 sm:w-10 sm:h-10 md:w-11 md:h-11 rounded-full flex items-center justify-center text-[10px] xs:text-xs sm:text-sm md:text-base font-bold cursor-pointer transition-all duration-300 bg-green-custom/20 text-green-custom border border-green-custom hover:bg-green-custom/30 hover:scale-105 hover:shadow-lg active:scale-95 flex-shrink-0">
+            04
+        </div>
+    </div>
+</div>
+
             </div>
         </div>
     </section>
@@ -346,16 +358,20 @@
 
                         <!-- Content with floating image -->
                         <div class="relative">
-                            <!-- Image floated to the right -->
-                            <div class="float-right ml-6 mb-4 w-72 lg:w-80">
-                                <div class="w-80 h-60 lg:h-96 rounded-2xl overflow-hidden shadow-lg">
+                            <!-- Responsive Image floated to the right -->
+                            <div
+                                class="float-none sm:float-right ml-0 sm:ml-6 mb-4 w-full sm:w-64 md:w-72 lg:w-80 mx-auto sm:mx-0">
+                                <div
+                                    class="w-full sm:w-64 md:w-72 lg:w-80 h-48 sm:h-48 md:h-60 lg:h-96 rounded-xl sm:rounded-2xl overflow-hidden shadow-md sm:shadow-lg">
                                     <img src="img/princess image.png" alt="Princess Diya Kumari"
                                         class="w-full h-full object-cover object-center" />
                                 </div>
-                                <p class="text-center mt-2 text-sm lg:text-base font-medium text-gray-700">
+                                <p
+                                    class="text-center mt-2 text-xs sm:text-sm lg:text-base font-medium text-gray-700 px-2 sm:px-0">
                                     Her Highness Princess Diya Kumari
                                 </p>
                             </div>
+
 
                             <!-- Content that flows around the image -->
                             <div class="text-justify text-gray-800 leading-relaxed space-y-4">
@@ -574,103 +590,103 @@
                         <ul class="divide-y divide-gray-100">
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🐪</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">Traveller's Tale | Jaipur | Gustasp and Jeroo
                                     Irani</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🐪</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">A tête-à-tête with Jaipur's royalty and what
                                     they love about their city | Jaipur | Dharmendar Kanwar</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🐪</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">A Heritage walk through Chhattis Karkhanas |
                                     Jaipur | Dharmendar Kanwar</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🐪</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">Indigo, The Blue Gold of India | Jaipur |
                                     Dharmendar Kanwar</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">Goa's unique Tripurari Poornima celebrations |
                                     Goa | Manjulika Pramod</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">Reinventing the WAY, we travel | Goa | Shikha
                                     Tripathi</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">The Best places for sundowners | Goa | Pallavi
                                     Pasricha</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">Goin' Goan Chef by Chef | Goa | Bunny
                                     Suraiya</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🏖️</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">A cruise into the sunset | Goa | Anuradha
                                     Goyal</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">Finding your bliss | Rishikesh | Mariellen
                                     Ward</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">In reverence to the river Ganges - Jai Gange! |
                                     Rishikesh | Anuradha Goyal</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">A river run for that shot of adrenaline |
                                     Rishikesh | Delhi Fundos</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">A Drop of Divine | Rishikesh | Shikha
                                     Tripathi</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🌊</span>
-                                <span class="text-gray-700 text-sm">An oasis of serenity | Rishikesh | Shikha
-                                    Tripathi</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
+                                <span class="text-gray-700 text-sm">An oasis of serenity | Udaipur | Shikha Tripathi
+                                </span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🌅</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">An 18th century hidden gem | Udaipur | Delhi
                                     Fundos</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🌅</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">Mewar on a platter | Udaipur | Manjulika
                                     Pramod</span>
                             </li>
                             <li
                                 class="p-3 hover:bg-gray-50 transition-colors duration-150 cursor-pointer flex items-center">
-                                <span class="text-gray-400 mr-3 text-sm">🌅</span>
+                                <span class="text-gray-400 mr-3 text-sm"></span>
                                 <span class="text-gray-700 text-sm">Romancing the lake city | Udaipur | Chitra
                                     Narayanan</span>
                             </li>
